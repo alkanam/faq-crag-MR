@@ -2,9 +2,11 @@
 Baseline evaluation with old architecture (no LangGraph, no query rewriting).
 """
 import os
-import env_loader
 import json
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate

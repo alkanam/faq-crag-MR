@@ -2,7 +2,9 @@
 Debug: see what context is actually being sent to the LLM
 """
 import os
-import env_loader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from retriever import setup_multi_vector_retriever
 

@@ -2,9 +2,11 @@
 Re-run full evaluation with improved context formatting
 """
 import os
-import env_loader
 import json
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from rag_graph import build_rag_graph
 

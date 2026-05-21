@@ -2,7 +2,9 @@
 Test single question with LangSmith tracing.
 """
 import os
-import env_loader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from rag_graph import build_rag_graph
 import json

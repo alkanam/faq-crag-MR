@@ -3,13 +3,15 @@ LangGraph-based RAG with query rewriting on retrieval failure.
 Single retry loop: if model says "I don't know", rewrite query once and retry.
 """
 import os
-import env_loader
+from dotenv import load_dotenv
 from typing import TypedDict
 from langgraph.graph import StateGraph, END
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from retriever import setup_multi_vector_retriever
+
+load_dotenv()
 
 
 class RAGState(TypedDict):

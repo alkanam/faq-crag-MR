@@ -2,7 +2,9 @@
 Debug retrieval to see what documents are being returned.
 """
 import os
-import env_loader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from retriever import setup_multi_vector_retriever
 

@@ -1,12 +1,13 @@
 import os
-import env_loader
+from dotenv import load_dotenv
 import time
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from retriever import setup_multi_vector_retriever
 
-# Load LangSmith settings from .env / environment
+load_dotenv()
+
 
 def generate_multi_query_variants(question: str, llm) -> list:
     """Generate 2-3 variants of the question for better retrieval."""

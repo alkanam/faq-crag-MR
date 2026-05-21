@@ -2,8 +2,10 @@
 Test with simple, straightforward FAQ questions
 """
 import os
-import env_loader
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate

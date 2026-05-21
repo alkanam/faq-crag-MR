@@ -2,9 +2,9 @@
 Quick test to verify LangSmith tracing is working
 """
 import os
-import env_loader
+from dotenv import load_dotenv
 
-# Setup LangSmith BEFORE imports
+load_dotenv()
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate

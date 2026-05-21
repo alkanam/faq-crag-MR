@@ -2,7 +2,9 @@
 Test with original code structure (no LangGraph) to see if it produces better answer.
 """
 import os
-import env_loader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate

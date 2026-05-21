@@ -2,14 +2,14 @@
 Test just the first in-scope question
 """
 import os
-import env_loader
+from dotenv import load_dotenv
 import time
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from retriever import setup_multi_vector_retriever
 
-# Setup LangSmith
+load_dotenv()
 
 question = "What are the environmental objectives under EU Taxonomy?"
 

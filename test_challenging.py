@@ -2,11 +2,13 @@
 Test a challenging question: retrieval + generation
 """
 import os
-import env_loader
+from dotenv import load_dotenv
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from retriever import setup_multi_vector_retriever
+
+load_dotenv()
 
 question = "If a company operates a forest management activity that partially involves afforestation on degraded land, but also uses some synthetic fertilizers in other sections of the same project, does the entire activity fail DNSH criteria or can they claim alignment for the compliant portions?"
 

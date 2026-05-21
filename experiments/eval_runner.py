@@ -3,11 +3,13 @@ Generic evaluation runner that works with any retriever implementation.
 Compares against baseline and saves results.
 """
 import os
-import env_loader
 import json
 import time
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate

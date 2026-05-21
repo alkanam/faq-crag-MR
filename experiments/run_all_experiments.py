@@ -2,10 +2,12 @@
 Master script to run all experiments and create comparison summary.
 """
 import os
-import env_loader
 import json
 import subprocess
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 results_dir = Path("results")
 results_dir.mkdir(exist_ok=True)

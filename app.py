@@ -1,10 +1,12 @@
 import os
-import env_loader
+from dotenv import load_dotenv
 import streamlit as st
 from generate import generate
 from retriever import setup_multi_vector_retriever
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+
+load_dotenv()
 
 
 @st.cache_resource
