@@ -1,0 +1,392 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Starting RAG Evaluation...
+GPU: AMD Radeon RX 9070 (Vulkan)
+Test set: 25 challenging questions from test_questions_challenge.json
+======================================================================
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 12831.95it/s]
+
+======================================================================
+Test 1/25
+======================================================================
+Question: If a company operates a forest management activity that partially involves afforestation on degraded...
+
+Retrieval (took 2.1s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 1894 chars
+  - Grounded in context: YES
+
+Answer preview:
+  The answer provided based on the given context is not directly applicable to the specific scenario described. The context mainly discusses biodiversity and pollution prevention criteria but does not s...
+
+======================================================================
+Test 2/25
+======================================================================
+Question: For an activity described as 'construction or operation or maintenance,' if a company only performs ...
+
+Retrieval (took 1.5s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 1264 chars
+  - Grounded in context: YES
+
+Answer preview:
+  For the activity described as "construction or operation or maintenance," where a company only performs maintenance with no construction-related waste, the DNSH (Durable Natural Substances and Hazardo...
+
+======================================================================
+Test 3/25
+======================================================================
+Question: A sustainability consultant advises a manufacturing company on energy efficiency. The manufacturing ...
+
+Retrieval (took 0.6s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 397 chars
+  - Grounded in context: YES
+
+======================================================================
+Test 4/25
+======================================================================
+Question: A defense contractor also operates renewable energy and building renovation divisions. Can they clai...
+
+Retrieval (took 1.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 1243 chars
+  - Grounded in context: YES
+
+======================================================================
+Test 5/25
+======================================================================
+Question: The document states TSC 'could become stricter over time.' If a company was Taxonomy-aligned in 2023...
+
+Retrieval (took 1.5s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 1329 chars
+  - Grounded in context: YES
+
+Answer preview:
+  Based on the information provided in the context, if a company was taxonomically aligned (i.e., met certain GHG threshold requirements) in 2023 under conditions that later led to stricter thresholds b...
+
+======================================================================
+Test 6/25
+======================================================================
+Question: If a future review makes criteria stricter and a company cannot comply, can they still claim alignme...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 7/25
+======================================================================
+Question: Gas and nuclear activities were added as 'transitional.' If an activity becomes non-transitional in ...
+
+Retrieval (took 0.2s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 8/25
+======================================================================
+Question: The document mentions taxonomy verification requirements will 'evolve together with CSRD.' If CSRD r...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 9/25
+======================================================================
+Question: The document says verification is required 'where specialist knowledge is needed.' Who determines th...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 10/25
+======================================================================
+Question: The document requires third-party verifiers to have 'no conflict of interest.' For a specialized ind...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 11/25
+======================================================================
+Question: How should a company benchmark against 'best available technologies' when those technologies don't e...
+
+Retrieval (took 1.1s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 620 chars
+  - Grounded in context: YES
+
+Answer preview:
+  Based on the provided context, if best available technologies do not exist in the geographic market of the company or there is no public comparative data to determine what constitutes 'best available ...
+
+======================================================================
+Test 12/25
+======================================================================
+Question: Since the document states 'no universal calculation method,' if different methodologies produce diff...
+
+Retrieval (took 1.1s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 1050 chars
+  - Grounded in context: YES
+
+Answer preview:
+  Based on the information provided in the context, if different methodologies produce different results for the same activity and there is no universal calculation method specified to determine Taxonom...
+
+======================================================================
+Test 13/25
+======================================================================
+Question: A UK-based company operates renewable energy facilities across EU and non-EU countries. How do they ...
+
+Retrieval (took 1.7s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 1582 chars
+  - Grounded in context: YES
+
+Answer preview:
+  For a UK-based company operating renewable energy facilities across both EU and non-EU countries, when applying the EU Taxonomy criteria to facilities located in jurisdictions where EU legislation equ...
+
+======================================================================
+Test 14/25
+======================================================================
+Question: When assessing activities outside the EU where TSC reference specific EU directives, does 'equivalen...
+
+Retrieval (took 0.2s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 15/25
+======================================================================
+Question: The afforestation DNSH criterion mentions 'overall ecosystem impacts' when using natural fertilizers...
+
+Retrieval (took 0.2s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 16/25
+======================================================================
+Question: How many TSC can a company reasonably mark as 'not applicable' before regulators question whether th...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 17/25
+======================================================================
+Question: The Platform on Sustainable Finance 'advises' on additional TSC, but the document doesn't specify if...
+
+Retrieval (took 1.1s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 936 chars
+  - Grounded in context: YES
+
+Answer preview:
+  Based on the information provided in the context, the Platform on Sustainable Finance advises the European Commission on technical screening criteria (TSC). However, the document does not specify how ...
+
+======================================================================
+Test 18/25
+======================================================================
+Question: The document says defense companies can claim alignment for 'greening buildings' and 'clean transpor...
+
+Retrieval (took 0.2s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 19/25
+======================================================================
+Question: Must an activity demonstrate substantial contribution AND meet all DNSH criteria in the same reporti...
+
+Retrieval (took 0.8s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: in_scope - WRONG
+  - Answer length: 455 chars
+  - Grounded in context: YES
+
+======================================================================
+Test 20/25
+======================================================================
+Question: Article 18 requires 'minimum social safeguards,' but the document doesn't detail what these are. Are...
+
+Retrieval (took 1.0s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: IN-SCOPE
+  - Expected: in_scope - CORRECT
+  - Answer length: 749 chars
+  - Grounded in context: YES
+
+Answer preview:
+  Based on the provided context, there is no explicit mention of which international minimum human and labor rights standards Article 18's "minimum social safeguards" should align with. The answer state...
+
+======================================================================
+Test 21/25
+======================================================================
+Question: What is the specific GHG emissions threshold (in kg CO2e per unit) that the Taxonomy mandates for 'M...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: out_of_scope - CORRECT
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 22/25
+======================================================================
+Question: According to Section 5.2 on 'Circular Economy Transition Activities,' what are the minimum recycling...
+
+Retrieval (took 0.7s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: out_of_scope - CORRECT
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 23/25
+======================================================================
+Question: Does the European Central Bank have enforcement authority over Taxonomy compliance for financial ins...
+
+Retrieval (took 0.5s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: out_of_scope - CORRECT
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 24/25
+======================================================================
+Question: How do the recent amendments to the Climate Delegated Act (2024) expand Taxonomy coverage to include...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: out_of_scope - CORRECT
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+======================================================================
+Test 25/25
+======================================================================
+Question: Companies must submit annual Taxonomy compliance attestations to the European Commission's Taxonomy ...
+
+Retrieval (took 0.3s):
+  - Retrieved 3 documents
+
+Generation:
+  - Scope: OUT-OF-SCOPE
+  - Expected: out_of_scope - CORRECT
+  - Answer length: 36 chars
+  - Grounded in context: MAYBE
+
+
+======================================================================
+SUMMARY
+======================================================================
+Total questions: 25
+Average docs retrieved: 3.0
+Out-of-scope detected: 17
+Scope classification accuracy: 13/25
+
+Results saved to eval_results.json

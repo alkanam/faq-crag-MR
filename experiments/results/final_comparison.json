@@ -1,0 +1,37 @@
+{
+  "Baseline Dense": {
+    "total_acc": 65.51724137931035,
+    "in_scope": 58.333333333333336,
+    "out_scope": 100.0,
+    "latency": 0.59232156852196,
+    "correct": "19/29"
+  },
+  "Baseline Multiquery Rewrite": {
+    "total_acc": 72.41379310344827,
+    "in_scope": 66.66666666666666,
+    "out_scope": 100.0,
+    "latency": 0.8983192197207747,
+    "correct": "21/29"
+  },
+  "Baseline Simple Rewrite": {
+    "total_acc": 65.51724137931035,
+    "in_scope": 58.333333333333336,
+    "out_scope": 100.0,
+    "latency": 1.029222693936578,
+    "correct": "19/29"
+  },
+  "Baseline Stepback Rewrite": {
+    "total_acc": 68.96551724137932,
+    "in_scope": 62.5,
+    "out_scope": 100.0,
+    "latency": 1.3120393259771939,
+    "correct": "20/29"
+  },
+  "Hybrid Dense Bm25": {
+    "total_acc": 68.96551724137932,
+    "in_scope": 62.5,
+    "out_scope": 100.0,
+    "latency": 0.7544193267822266,
+    "correct": "20/29"
+  }
+}

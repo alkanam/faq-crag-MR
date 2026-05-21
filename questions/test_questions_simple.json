@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": "pair_1",
+      "original": "Will the technical screening criteria set out in the Climate Delegated Act be made stricter and updated over time?",
+      "rephrased": "Are the technical screening criteria subject to periodic reviews and potential tightening?"
+    },
+    {
+      "id": "pair_2",
+      "original": "How will the Taxonomy be further developed – will there be more activities contributing to climate change mitigation (CCM) included in the Climate Delegated Act?",
+      "rephrased": "Should we expect additional economic activities to be recognized as Taxonomy-aligned in future updates?"
+    },
+    {
+      "id": "pair_3",
+      "original": "What does checking the compliance with the TSC on the substantial contribution and the DNSH mean in practice?",
+      "rephrased": "What practical steps are involved in verifying that an activity meets the Taxonomy's substantial contribution and DNSH requirements?"
+    },
+    {
+      "id": "pair_4",
+      "original": "How should verification requirements in the technical screening criteria be understood?",
+      "rephrased": "In what situations might an activity require independent third-party verification to demonstrate Taxonomy-alignment?"
+    },
+    {
+      "id": "pair_5",
+      "original": "Can technical consultancy services be counted as Taxonomy-eligible, and potentially Taxonomy-aligned, if they are related to an activity defined in the Taxonomy Delegated Acts?",
+      "rephrased": "Under what circumstances can a consulting firm's services qualify as Taxonomy-aligned activities?"
+    },
+    {
+      "id": "pair_6",
+      "original": "How should GHG emissions for technical screening criteria be calculated (scope, methodologies etc.)?",
+      "rephrased": "Is there a standardized approach that all Taxonomy-aligned activities must follow for measuring greenhouse gas emissions?"
+    },
+    {
+      "id": "pair_7",
+      "original": "How can an undertaking's activities that are carried out in jurisdictions outside the EU be assessed for compliance with the technical screening criteria?",
+      "rephrased": "What standards apply when evaluating whether a company's operations in non-EU countries meet Taxonomy requirements?"
+    },
+    {
+      "id": "pair_8",
+      "original": "How to interpret the use of \"and\" and \"or\" in the description of economic activities?",
+      "rephrased": "When the Taxonomy describes an activity as 'construction and operation', does a company need to do both to qualify?"
+    },
+    {
+      "id": "pair_9",
+      "original": "How to deal with technical screening criteria that are not relevant to a specific activity?",
+      "rephrased": "If an activity genuinely doesn't involve certain aspects covered by TSC, how should this be handled in reporting?"
+    },
+    {
+      "id": "pair_10",
+      "original": "How about companies without any Taxonomy-aligned activities? Will they lose access to finance?",
+      "rephrased": "Can companies that lack Taxonomy-aligned activities still access capital and investor funding?"
+    },
+    {
+      "id": "pair_11",
+      "original": "The DNSH criteria for pollution prevention and control of the activity \"Afforestation\" specify that the activity should minimise the use of fertilisers and not use manure. Should the use of natural fertilisers also be minimised?",
+      "rephrased": "In afforestation projects, are natural and non-chemical fertilizers exempt from the minimization requirement?"
+    },
+    {
+      "id": "pair_12",
+      "original": "How does the sustainable finance framework apply to access to private funding for the defence industry?",
+      "rephrased": "Are there any restrictions on Taxonomy-aligned activities that defence contractors can claim?"
+    },
+    {
+      "id": "oos_1",
+      "question": "Who is Jayson Tatum and what is his jersey number?"
+    },
+    {
+      "id": "oos_2",
+      "question": "What is the capital of Australia?"
+    },
+    {
+      "id": "oos_3",
+      "question": "How many legs does a spider have?"
+    },
+    {
+      "id": "oos_4",
+      "question": "What is the recipe for chocolate chip cookies?"
+    },
+    {
+      "id": "oos_5",
+      "question": "When was the Eiffel Tower built?"
+    }
+  ]
+}

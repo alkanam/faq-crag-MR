@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Filter \"*.md\")",
+      "Bash(Select-Object FullName)",
+      "PowerShell(head -20)",
+      "PowerShell(pip install chromadb sentence-transformers torch numpy)",
+      "Bash(pip show *)",
+      "Bash(netstat -ano)",
+      "Bash(findstr 8501)",
+      "Bash(pkill -f \"streamlit run\")",
+      "Bash(streamlit run *)",
+      "Bash(python -c \"from generate import generate; print\\('Import successful'\\)\")",
+      "Bash(curl -s http://localhost:8501)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(python -m json.tool)",
+      "Bash(export HSA_OVERRIDE_GFX_VERSION=\"11.0.0\")",
+      "Bash(ollama serve *)",
+      "Bash(export OLLAMA_VULKAN=1)",
+      "Bash(python3)",
+      "Bash(cd \"/c/Users/Cole Palma/Documents/GitHub/faq-rag-improved\" && grep -i -A 10 \"forest\\\\|afforestation\\\\|synthetic\\\\|fertilizer\\\\|DNSH\\\\|compliant\\\\|portions\" ./doc/taxonomy_faqs_cleaned.md | head -100)",
+      "Read(//c/c/Users/Cole Palma/Documents/GitHub/faq-rag-improved/doc/**)",
+      "Bash(python -c \"from llama_index.core import evaluation; print\\(dir\\(evaluation\\)\\)\")",
+      "PowerShell(Stop-Process -Name ollama -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(\"Ollama stopped\")",
+      "Bash(python run_eval.py)",
+      "Bash(pip list *)",
+      "Bash(python test_single.py)",
+      "Bash(python run_eval_baseline.py)"
+    ]
+  }
+}

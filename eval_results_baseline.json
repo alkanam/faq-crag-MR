@@ -1,0 +1,292 @@
+[
+  {
+    "id": "pair_1_orig",
+    "question": "Will the technical screening criteria set out in the Climate Delegated Act be made stricter and updated over time?",
+    "answer": "According to Article 19(5) of the Taxonomy Regulation, the Commission is required to regularly review the Technical Screening Criteria (TSC) defining substantial contribution to environmental objectives. For activities identified as transitional in the Climate Delegated Act, these reviews would be conducted at least every three years. This ensures that the criteria remain on a credible transition pathway consistent with a climate-neutral economy. For other activities, there is no specified minimum period for updates.\n\nThe Taxonomy Regulation also requires updating of TSC over time to align them with overall policy objectives, technological developments, and the availability of scientifically robust evidence justifying new or updated criteria.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 752,
+    "elapsed_seconds": 1.0153703689575195
+  },
+  {
+    "id": "pair_1_reph",
+    "question": "Are the technical screening criteria subject to periodic reviews and potential tightening?",
+    "answer": "Yes, the technical screening criteria (TSC) are subject to periodic reviews. Article 19(5) of the Taxonomy Regulation requires the Commission to regularly review the TSC defining substantial contribution to environmental objectives and determining whether or not an economic activity qualifies as aligned with these objectives. The review is conducted at least every three years for activities identified as transitional in the Climate Delegated Act, ensuring they remain on a credible transition pathway consistent with a climate-neutral economy. For other activities, there is no specified minimum period for reviews. Therefore, the TSC will be updated over time to keep them aligned with overall policy objectives, technological developments, and the availability of scientifically robust evidence justifying the introduction of new or updated criteria.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 856,
+    "elapsed_seconds": 1.1332056522369385
+  },
+  {
+    "id": "pair_2_orig",
+    "question": "How will the Taxonomy be further developed \u00e2\u20ac\u201c will there be more activities contributing to climate change mitigation (CCM) included in the Climate Delegated Act?",
+    "answer": "The Taxonomy will continue to be developed over time. The Climate Delegated Act prioritized economic sectors and activities with the highest potential to make a substantial contribution to GHG emission reduction based on their share of overall emissions and their potential to reduce emissions. Therefore, it is expected that more activities contributing to climate change mitigation (CCM) will be included in future developments of the Taxonomy.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 446,
+    "elapsed_seconds": 0.7024455070495605
+  },
+  {
+    "id": "pair_2_reph",
+    "question": "Should we expect additional economic activities to be recognized as Taxonomy-aligned in future updates?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.25055599212646484
+  },
+  {
+    "id": "pair_3_orig",
+    "question": "What does checking the compliance with the TSC on the substantial contribution and the DNSH mean in practice?",
+    "answer": "Checking compliance with the Taxonomy Screening Criteria (TSC) on substantial contribution (SC) and the De minimis Notification and Standard (DNSH) involves verifying that an economic activity meets the conditions set out in the Taxonomy Regulation. This requires gathering relevant information to assess whether the activity fulfills the criteria related to SC and DNSH, as well as the minimum social safeguards outlined in Article 18 of the Taxonomy Regulation.\n\nSpecifically:\n- For substantial contribution (SC), all activities must meet the conditions set by the TSC.\n- The DNSH criterion for pollution prevention and control (PPC) requires that emissions be within or lower than the emission levels associated with the best available techniques (BAT-AEL) ranges specified in relevant BAT conclusions. This applies regardless of whether there is an obligation to have a permit to operate, as long as emissions do not exceed those set by the BAT conclusions.\n- The reference to EU legislation mentioned in the DNSH criteria identifies substances within its scope and specifies requirements for these substances according to Appendix C.\n\nThus, compliance with TSC on SC and DNSH means ensuring that an economic activity aligns with the Taxonomy Regulation's standards of environmental sustainability.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 1302,
+    "elapsed_seconds": 1.642704725265503
+  },
+  {
+    "id": "pair_3_reph",
+    "question": "What practical steps are involved in verifying that an activity meets the Taxonomy's substantial contribution and DNSH requirements?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.22694110870361328
+  },
+  {
+    "id": "pair_4_orig",
+    "question": "How should verification requirements in the technical screening criteria be understood?",
+    "answer": "Verification requirements in the technical screening criteria (TSC) are understood as part of specific activities covered by the Climate Delegated Act. These requirements align with point (k) of Article 19(1) of the Taxonomy Regulation, which mandates that TSCs be easily understandable and facilitate verification of compliance. This is particularly relevant for criteria involving elements requiring specialist knowledge, where investor accuracy in checking such information may be challenging.\n\nFor activities necessitating external verification due to concerns about compliance with these criteria, an external verifier, either a national competent authority or an independent third-party entity without conflicts of interest regarding the activity's operation, will provide evidence of compliance. This report by the external verifier serves as documentary evidence supporting compliance with those specific TSCs.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 918,
+    "elapsed_seconds": 1.119070291519165
+  },
+  {
+    "id": "pair_4_reph",
+    "question": "In what situations might an activity require independent third-party verification to demonstrate Taxonomy-alignment?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.24385905265808105
+  },
+  {
+    "id": "pair_5_orig",
+    "question": "Can technical consultancy services be counted as Taxonomy-eligible, and potentially Taxonomy-aligned, if they are related to an activity defined in the Taxonomy Delegated Acts?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.29419469833374023
+  },
+  {
+    "id": "pair_5_reph",
+    "question": "Under what circumstances can a consulting firm's services qualify as Taxonomy-aligned activities?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.2208395004272461
+  },
+  {
+    "id": "pair_6_orig",
+    "question": "How should GHG emissions for technical screening criteria be calculated (scope, methodologies etc.)?",
+    "answer": "According to the provided FAQ context, there is no universal calculation method for GHG emissions in the Climate Delegated Act. Specific calculation methods are set out in the Technical Screening Criteria (TSC) for specific activities, aligned with the methodological approaches based on requirements laid out in Article 19 of the Taxonomy Regulation. The definitions of processes and emissions covered by different screening criteria, including their system boundaries, are given in Annex I to Commission Delegated Regulation (EU) 2019/331.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 541,
+    "elapsed_seconds": 0.8563685417175293
+  },
+  {
+    "id": "pair_6_reph",
+    "question": "Is there a standardized approach that all Taxonomy-aligned activities must follow for measuring greenhouse gas emissions?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.2277522087097168
+  },
+  {
+    "id": "pair_7_orig",
+    "question": "How can an undertaking's activities that are carried out in jurisdictions outside the EU be assessed for compliance with the technical screening criteria?",
+    "answer": "An undertaking\u2019s activities that are conducted in jurisdictions outside the EU can be assessed for compliance with the technical screening criteria (TSC) by ensuring they meet either the local third-country requirements or guidelines, when applicable. If the TSC refer to jurisdiction-specific requirements laid out in EU legislation, undertakings should verify if their activities comply with those specific EU/national requirements.\n\nIn situations where the TSC do not explicitly mention a need for compliance with EU/national legislation and instead rely on thresholds or objectives that don't specify location-specific regulatory requirements, undertakings may still need to ensure their activities meet global standards or guidelines applicable in third countries. These could include references to international standards or equivalent national laws set out in Annex I of the Taxonomy Regulation.\n\nIf the TSC do refer directly to EU legislation or specific international standards, then compliance must be ensured based on those regulations or standards pertinent to the location where the activities are being conducted. External verification may also be required for specific criteria if they necessitate specialized knowledge and are challenging to verify independently. In such cases, external verifiers can provide evidence of compliance with these technical screening criteria.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 1389,
+    "elapsed_seconds": 1.5624167919158936
+  },
+  {
+    "id": "pair_7_reph",
+    "question": "What standards apply when evaluating whether a company's operations in non-EU countries meet Taxonomy requirements?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.2611575126647949
+  },
+  {
+    "id": "pair_8_orig",
+    "question": "How to interpret the use of \"and\" and \"or\" in the description of economic activities?",
+    "answer": "The terms 'and' and 'or' are used interchangeably in the activity descriptions but not in the criteria. When referring to a criteria, 'and' refers to a cumulative requirement. In general, an economic activity is Taxonomy-eligible if it constitutes any of the steps referenced in the description of the activity in bringing that activity to market (e.g., construction, operation, refurbishment, installation, maintenance etc.).",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 426,
+    "elapsed_seconds": 0.6740872859954834
+  },
+  {
+    "id": "pair_8_reph",
+    "question": "When the Taxonomy describes an activity as 'construction and operation', does a company need to do both to qualify?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.263552188873291
+  },
+  {
+    "id": "pair_9_orig",
+    "question": "How to deal with technical screening criteria that are not relevant to a specific activity?",
+    "answer": "If the economic activity does not involve an element addressed by the TSC, and it has no impact on other environmental objectives without giving rise to any potential issues with a DNSH-criterion, then an explanation of this fact can be provided in the disclosure. This means that you need to provide justification for why the activity qualifies as Taxonomy-aligned even if certain criteria are not directly relevant or applicable to your specific service.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 456,
+    "elapsed_seconds": 0.7576923370361328
+  },
+  {
+    "id": "pair_9_reph",
+    "question": "If an activity genuinely doesn't involve certain aspects covered by TSC, how should this be handled in reporting?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.3290090560913086
+  },
+  {
+    "id": "pair_10_orig",
+    "question": "How about companies without any Taxonomy-aligned activities? Will they lose access to finance?",
+    "answer": "No. The mere fact that a company does not have Taxonomy-aligned activities does not mean that conclusions can be drawn regarding the company\u2019s environmental performance or its ability to access finance.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 202,
+    "elapsed_seconds": 0.4665260314941406
+  },
+  {
+    "id": "pair_10_reph",
+    "question": "Can companies that lack Taxonomy-aligned activities still access capital and investor funding?",
+    "answer": "No, companies without Taxonomy-aligned activities will not necessarily lose access to finance. The provided FAQ states that a company's lack of Taxonomy-aligned activities does not mean that conclusions can be drawn regarding the company\u2019s environmental performance or its ability to access finance. Therefore, companies lacking such activities can still potentially access capital and investor funding.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 403,
+    "elapsed_seconds": 0.522911548614502
+  },
+  {
+    "id": "pair_11_orig",
+    "question": "The DNSH criteria for pollution prevention and control of the activity \"Afforestation\" specify that the activity should minimise the use of fertilisers and not use manure. Should the use of natural fertilisers also be minimised?",
+    "answer": "The DNSH criterion requires the minimisation of fertilisers by favouring the use of alternative approaches or techniques including non-chemical or natural fertilisers. In cases where non-chemical or natural fertilisers are used, their overall consumption should be kept at a minimum and take account of broader ecosystem impacts. Therefore, for the activity \"Afforestation,\" while manure is not to be used, the use of natural fertilizers should also be minimized according to the DNSH criteria.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 494,
+    "elapsed_seconds": 0.7714011669158936
+  },
+  {
+    "id": "pair_11_reph",
+    "question": "In afforestation projects, are natural and non-chemical fertilizers exempt from the minimization requirement?",
+    "answer": "The use of natural and non-chemical fertilizers should be minimized as per the DNSH criteria. While the criteria specify that they should favour alternative approaches or techniques including non-chemical or natural fertilizers, their overall consumption should also be kept at a minimum and consider broader ecosystem impacts.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 327,
+    "elapsed_seconds": 0.5196483135223389
+  },
+  {
+    "id": "pair_12_orig",
+    "question": "How does the sustainable finance framework apply to access to private funding for the defence industry?",
+    "answer": "The sustainable finance framework applies to ensuring access to finance and investment, including from the private sector, for all strategic sectors, which includes the defense industry. The Commission acknowledges this need and supports access to financing in the defense industry as it contributes to European citizens' security.",
+    "expected_scope": "in_scope",
+    "is_outofscope": false,
+    "scope_correct": true,
+    "answer_length": 331,
+    "elapsed_seconds": 0.5136852264404297
+  },
+  {
+    "id": "pair_12_reph",
+    "question": "Are there any restrictions on Taxonomy-aligned activities that defence contractors can claim?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "in_scope",
+    "is_outofscope": true,
+    "scope_correct": false,
+    "answer_length": 36,
+    "elapsed_seconds": 0.2639026641845703
+  },
+  {
+    "id": "oos_1",
+    "question": "Who is Jayson Tatum and what is his jersey number?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "out_of_scope",
+    "is_outofscope": true,
+    "scope_correct": true,
+    "answer_length": 36,
+    "elapsed_seconds": 0.2684633731842041
+  },
+  {
+    "id": "oos_2",
+    "question": "What is the capital of Australia?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "out_of_scope",
+    "is_outofscope": true,
+    "scope_correct": true,
+    "answer_length": 36,
+    "elapsed_seconds": 0.37608981132507324
+  },
+  {
+    "id": "oos_3",
+    "question": "How many legs does a spider have?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "out_of_scope",
+    "is_outofscope": true,
+    "scope_correct": true,
+    "answer_length": 36,
+    "elapsed_seconds": 0.8186962604522705
+  },
+  {
+    "id": "oos_4",
+    "question": "What is the recipe for chocolate chip cookies?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "out_of_scope",
+    "is_outofscope": true,
+    "scope_correct": true,
+    "answer_length": 36,
+    "elapsed_seconds": 0.22827911376953125
+  },
+  {
+    "id": "oos_5",
+    "question": "When was the Eiffel Tower built?",
+    "answer": "I don't have information about this.",
+    "expected_scope": "out_of_scope",
+    "is_outofscope": true,
+    "scope_correct": true,
+    "answer_length": 36,
+    "elapsed_seconds": 0.29665541648864746
+  }
+]

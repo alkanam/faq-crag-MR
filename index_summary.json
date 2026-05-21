@@ -1,0 +1,8 @@
+{
+  "qa_pair_count": 0,
+  "question_count": 0,
+  "answer_count": 0,
+  "chunk_count": 0,
+  "chroma_path": "./chroma_db",
+  "embedding_model": "all-MiniLM-L6-v2"
+}

@@ -1,0 +1,198 @@
+{
+  "boundary_scope": [
+    {
+      "id": "challenge_1",
+      "question": "If a company operates a forest management activity that partially involves afforestation on degraded land, but also uses some synthetic fertilizers in other sections of the same project, does the entire activity fail DNSH criteria or can they claim alignment for the compliant portions?",
+      "category": "multi_criteria",
+      "difficulty": "very_hard",
+      "note": "Requires understanding partial compliance and DNSH interpretation"
+    },
+    {
+      "id": "challenge_2",
+      "question": "For an activity described as 'construction or operation or maintenance,' if a company only performs maintenance with zero construction-related waste, which TSC specifically apply and which can be marked as N/A?",
+      "category": "scope_ambiguity",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of disjunctive activity descriptions"
+    },
+    {
+      "id": "challenge_3",
+      "question": "A sustainability consultant advises a manufacturing company on energy efficiency. The manufacturing activity isn't directly listed in the Taxonomy, but the advice relates to 'energy performance of buildings.' Is the consultancy itself Taxonomy-eligible?",
+      "category": "service_chain",
+      "difficulty": "very_hard",
+      "note": "Requires understanding enabling activity scope"
+    },
+    {
+      "id": "challenge_4",
+      "question": "A defense contractor also operates renewable energy and building renovation divisions. Can they claim Taxonomy alignment for the non-defense divisions separately, or does defense industry controversy affect the entire company's eligibility?",
+      "category": "multi_sector",
+      "difficulty": "very_hard",
+      "note": "Tests company-wide vs. activity-specific alignment"
+    }
+  ],
+  "temporal_evolution": [
+    {
+      "id": "challenge_5",
+      "question": "The document states TSC 'could become stricter over time.' If a company was Taxonomy-aligned in 2023 under certain GHG thresholds that are then tightened in 2025, is their historical classification retroactively invalidated for reporting purposes?",
+      "category": "temporal_ambiguity",
+      "difficulty": "very_hard",
+      "note": "Requires understanding retroactivity of criteria changes"
+    },
+    {
+      "id": "challenge_6",
+      "question": "If a future review makes criteria stricter and a company cannot comply, can they still claim alignment under the previous version's criteria, or must they immediately re-classify?",
+      "category": "evolving_criteria",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of criteria evolution governance"
+    },
+    {
+      "id": "challenge_7",
+      "question": "Gas and nuclear activities were added as 'transitional.' If an activity becomes non-transitional in a future update, what happens to disclosures already made claiming it as transitional?",
+      "category": "reclassification",
+      "difficulty": "very_hard",
+      "note": "Requires understanding transitional activity evolution"
+    },
+    {
+      "id": "challenge_8",
+      "question": "The document mentions taxonomy verification requirements will 'evolve together with CSRD.' If CSRD requirements aren't finalized yet, can companies claim Taxonomy alignment now, and will retrospective adjustments be required?",
+      "category": "csrd_interaction",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of regulatory coordination"
+    }
+  ],
+  "verification_evidence": [
+    {
+      "id": "challenge_9",
+      "question": "The document says verification is required 'where specialist knowledge is needed.' Who determines this threshold—the company, the verifier, or does the document specify explicit criteria?",
+      "category": "verification_determination",
+      "difficulty": "very_hard",
+      "note": "Requires finding specificity gaps in documentation"
+    },
+    {
+      "id": "challenge_10",
+      "question": "The document requires third-party verifiers to have 'no conflict of interest.' For a specialized industry with few qualified verifiers, how is conflict-of-interest determined if all verifiers have prior work in that sector?",
+      "category": "verifier_independence",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of practical verification constraints"
+    },
+    {
+      "id": "challenge_11",
+      "question": "How should a company benchmark against 'best available technologies' when those technologies don't exist in their geographic market and comparative data isn't publicly available—is estimation acceptable?",
+      "category": "benchmarking",
+      "difficulty": "very_hard",
+      "note": "Requires understanding technology assessment methodology"
+    },
+    {
+      "id": "challenge_12",
+      "question": "Since the document states 'no universal calculation method,' if different methodologies produce different results for the same activity, which one determines Taxonomy status?",
+      "category": "ghg_calculation",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of methodological flexibility"
+    }
+  ],
+  "jurisdiction_geography": [
+    {
+      "id": "challenge_13",
+      "question": "A UK-based company operates renewable energy facilities across EU and non-EU countries. How do they apply Taxonomy criteria to facilities in jurisdictions where EU legislation equivalence cannot be established, but local standards exist?",
+      "category": "jurisdiction_boundary",
+      "difficulty": "very_hard",
+      "note": "Requires understanding territorial scope of Taxonomy"
+    },
+    {
+      "id": "challenge_14",
+      "question": "When assessing activities outside the EU where TSC reference specific EU directives, does 'equivalent national law' mean the same outcome or the same process?",
+      "category": "third_country_equivalence",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of regulatory equivalence assessment"
+    }
+  ],
+  "environmental_criteria": [
+    {
+      "id": "challenge_15",
+      "question": "The afforestation DNSH criterion mentions 'overall ecosystem impacts' when using natural fertilizers, but doesn't define 'overall impacts.' How much ecosystem impact variation is permissible?",
+      "category": "dnsh_interpretation",
+      "difficulty": "very_hard",
+      "note": "Requires understanding undefined environmental thresholds"
+    },
+    {
+      "id": "challenge_16",
+      "question": "How many TSC can a company reasonably mark as 'not applicable' before regulators question whether the activity actually qualifies? Is there a disclosed threshold?",
+      "category": "na_application",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of N/A application limits"
+    }
+  ],
+  "authority_governance": [
+    {
+      "id": "challenge_17",
+      "question": "The Platform on Sustainable Finance 'advises' on additional TSC, but the document doesn't specify if the Commission must adopt this advice, can modify it, or can reject it entirely—how binding is it?",
+      "category": "platform_authority",
+      "difficulty": "very_hard",
+      "note": "Requires understanding governance relationships"
+    },
+    {
+      "id": "challenge_18",
+      "question": "The document says defense companies can claim alignment for 'greening buildings' and 'clean transport'—does this include supply chain companies that provide materials to defense contractors, or only direct defense operators?",
+      "category": "defense_scope",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of defense sector carve-outs"
+    }
+  ],
+  "compliance_reporting": [
+    {
+      "id": "challenge_19",
+      "question": "Must an activity demonstrate substantial contribution AND meet all DNSH criteria in the same reporting period, or can a company show progression across periods?",
+      "category": "simultaneity",
+      "difficulty": "very_hard",
+      "note": "Requires understanding temporal requirements"
+    },
+    {
+      "id": "challenge_20",
+      "question": "Article 18 requires 'minimum social safeguards,' but the document doesn't detail what these are. Are they assumed to align with ILO conventions, or do they have specific Taxonomy definitions?",
+      "category": "social_safeguards",
+      "difficulty": "very_hard",
+      "note": "Tests understanding of undefined social requirements"
+    }
+  ],
+  "hallucination_detection": [
+    {
+      "id": "hallucination_1",
+      "question": "What is the specific GHG emissions threshold (in kg CO2e per unit) that the Taxonomy mandates for 'Manufacture of low-carbon technologies' activities?",
+      "category": "fabricated_threshold",
+      "difficulty": "very_hard",
+      "note": "Trap: Document mentions thresholds exist but never specifies numerical values",
+      "hallucination_trap": true
+    },
+    {
+      "id": "hallucination_2",
+      "question": "According to Section 5.2 on 'Circular Economy Transition Activities,' what are the minimum recycling rates required for Taxonomy alignment?",
+      "category": "nonexistent_section",
+      "difficulty": "very_hard",
+      "note": "Trap: No Section 5.2 exists; only Sections 1-4 are referenced",
+      "hallucination_trap": true
+    },
+    {
+      "id": "hallucination_3",
+      "question": "Does the European Central Bank have enforcement authority over Taxonomy compliance for financial institutions not complying with the criteria?",
+      "category": "implied_authority",
+      "difficulty": "very_hard",
+      "note": "Trap: Not mentioned; only Commission, Platform, and member states are referenced",
+      "hallucination_trap": true
+    },
+    {
+      "id": "hallucination_4",
+      "question": "How do the recent amendments to the Climate Delegated Act (2024) expand Taxonomy coverage to include agricultural biotechnology?",
+      "category": "speculative_update",
+      "difficulty": "very_hard",
+      "note": "Trap: Pure fabrication; document doesn't mention agricultural biotechnology",
+      "hallucination_trap": true
+    },
+    {
+      "id": "hallucination_5",
+      "question": "Companies must submit annual Taxonomy compliance attestations to the European Commission's Taxonomy Bureau by March 31st—where should they submit these?",
+      "category": "invented_procedure",
+      "difficulty": "very_hard",
+      "note": "Trap: No such submission requirement or bureau is mentioned",
+      "hallucination_trap": true
+    }
+  ]
+}
