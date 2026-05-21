@@ -1,3 +1,16 @@
+"""
+Answer generation with multi-query retrieval enhancement.
+
+This module provides functions for generating answers to user questions using
+a language model with optional multi-query retrieval. When the initial retrieval
+returns sparse context, it can generate alternative phrasings of the question
+and retry retrieval with better results.
+
+The multi-query approach improves recall by covering different semantic angles:
+- Original phrasing may miss relevant documents
+- Alternative phrasings often retrieve complementary information
+- Best context is selected automatically for answer generation
+"""
 import os
 from dotenv import load_dotenv
 import time
@@ -10,7 +23,20 @@ load_dotenv()
 
 
 def generate_multi_query_variants(question: str, llm) -> list:
-    """Generate 2-3 variants of the question for better retrieval."""
+    """
+    Generate 2 alternative phrasings of a question for retrieval.
+
+    Asks the LLM to rephrase the question from different angles without changing
+    the meaning. This helps retrieve documents that might be missed by the original
+    phrasing but contain relevant information using different terminology.
+
+    Args:
+        question (str): The original user question
+        llm: Language model to use for generating variants (OllamaLLM)
+
+    Returns:
+        list: List of up to 2 question variants (strings), empty if generation fails
+    """
     multi_query_template = """Generate 2 different reformulations of this question that ask the same thing but from different angles:
 
 Original question: {question}
@@ -34,17 +60,32 @@ Reformulations (one per line):"""
 
 def generate(question: str, retriever, llm, prompt, use_multi_query: bool = True):
     """
-    Generate answer for a question with multi-query retrieval.
+    Generate a streaming answer with optional multi-query retrieval fallback.
+
+    Retrieves context using the user's question, then optionally generates question
+    variants and retries if initial retrieval yields sparse context (<1000 chars).
+    Streams the answer token-by-token to the caller with timing information.
+
+    The process:
+    1. Retrieve documents for the original question
+    2. If context is sparse and multi_query enabled:
+       - Generate 2 question variants
+       - Retrieve with first variant
+       - Use variant results if they contain more context
+    3. Generate answer by streaming from the LLM
+    4. Yield answer chunks plus metadata (query used, variants attempted)
 
     Args:
-        question: The user's question
-        retriever: Retriever instance
-        llm: Language model
-        prompt: Prompt template
-        use_multi_query: Whether to use multi-query approach (default True)
+        question (str): The user's original question
+        retriever: Document retriever instance (SimpleMultiVectorRetriever)
+        llm: Language model instance (OllamaLLM)
+        prompt: Prompt template (ChatPromptTemplate)
+        use_multi_query (bool): Enable multi-query variant fallback (default True)
 
-    Returns:
-        Generator yielding answer chunks + metadata about retrieval
+    Yields:
+        str: Answer text chunks (for streaming) followed by metadata lines
+            - Query used for retrieval
+            - Number of variants attempted (if applicable)
     """
     t_start = time.time()
 

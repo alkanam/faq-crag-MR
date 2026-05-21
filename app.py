@@ -1,3 +1,16 @@
+"""
+Streamlit web UI for EU Taxonomy FAQ Assistant.
+
+This module provides an interactive interface for asking questions about the EU Taxonomy
+Regulation and Climate Delegated Act. It uses a RAG (Retrieval-Augmented Generation) system
+with multi-query retrieval to improve answer accuracy and relevance.
+
+The system:
+- Retrieves relevant Q&A pairs from ChromaDB using semantic similarity
+- Generates variants of user questions for better coverage
+- Streams answers in real-time with performance metrics
+- Shows retrieved context documents for transparency
+"""
 import os
 from dotenv import load_dotenv
 import streamlit as st
@@ -11,7 +24,19 @@ load_dotenv()
 
 @st.cache_resource
 def init_components():
-    """Initialize retriever, LLM, and prompt once, with warmup."""
+    """
+    Initialize and cache RAG components (retriever, LLM, prompt).
+
+    Creates a multi-vector retriever from ChromaDB, initializes the Qwen 2.5 (3B)
+    language model via Ollama, and prepares the answer generation prompt template.
+    Performs a warmup call to load the model into memory on first access.
+
+    Returns:
+        tuple: (retriever, llm, prompt_template) cached for the session
+            - retriever: SimpleMultiVectorRetriever instance
+            - llm: OllamaLLM with qwen2.5:3b model
+            - prompt: ChatPromptTemplate for answer generation
+    """
     retriever = setup_multi_vector_retriever()
     llm = OllamaLLM(model="qwen2.5:3b")
     template = """Based on the context below, answer the question. Only use information from the context. If the answer is not in the context, say "I don't have information about this."
@@ -34,6 +59,16 @@ Answer:"""
 
 
 def main():
+    """
+    Run the main Streamlit application.
+
+    Configures the page layout, displays the UI components, and handles user
+    interactions. When a user submits a question, this function:
+    1. Initializes RAG components if not already cached
+    2. Retrieves relevant context documents
+    3. Generates an answer with multi-query retrieval fallback
+    4. Displays the answer, source context, and performance metrics
+    """
     st.set_page_config(
         page_title="FAQ RAG System",
         page_icon="📚",
@@ -126,3 +161,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
