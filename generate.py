@@ -24,7 +24,7 @@ load_dotenv()
 
 def generate_multi_query_variants(question: str, llm) -> list:
     """
-    Generate 2 alternative phrasings of a question for retrieval.
+    Generate 3 alternative phrasings of a question for retrieval.
 
     Asks the LLM to rephrase the question from different angles without changing
     the meaning. This helps retrieve documents that might be missed by the original
@@ -35,9 +35,9 @@ def generate_multi_query_variants(question: str, llm) -> list:
         llm: Language model to use for generating variants (OllamaLLM)
 
     Returns:
-        list: List of up to 2 question variants (strings), empty if generation fails
+        list: List of up to 3 question variants (strings), empty if generation fails
     """
-    multi_query_template = """Generate 2 different reformulations of this question that ask the same thing but from different angles:
+    multi_query_template = """Generate 3 different reformulations of this question that ask the same thing but from different angles:
 
 Original question: {question}
 
@@ -55,7 +55,7 @@ Reformulations (one per line):"""
         if v.strip()
     ]
 
-    return variants[:2]  # Return up to 2 variants
+    return variants[:3]  # Return up to 3 variants
 
 
 def generate(question: str, retriever, llm, prompt, use_multi_query: bool = True):
@@ -101,47 +101,77 @@ def generate(question: str, retriever, llm, prompt, use_multi_query: bool = True
 
     print(f"[TIMING] Retrieval (primary): {retrieval_time:.0f}ms, Docs: {len(docs)}")
 
-    # Check if answer is insufficient (first attempt)
-    no_knowledge_phrases = [
-        "don't have information",
-        "don't know",
-        "i'm not",
-        "not available",
-        "not mentioned",
-        "not provided",
+    # Generate initial answer
+    t3 = time.time()
+    chain = prompt | llm | StrOutputParser()
+    print(f"\n[GENERATION] Initial retrieval: {len(docs)} docs, {len(context)} chars")
+    initial_answer = chain.invoke({"context": context, "question": question})
+
+    # Check if answer is a hallucination
+    hallucination_phrases = [
+        "I don't have information about this"
     ]
 
-    # Try retrieving with variants if enabled and initial retrieval seems weak
-    if use_multi_query and len(context) < 1000:  # If context is sparse
+    is_hallucinating = any(phrase.lower() in initial_answer.lower() for phrase in hallucination_phrases)
+    print(f"[GENERATION] Hallucination detected: {is_hallucinating}")
+
+    # If hallucinating and multi-query enabled, try variants
+    if is_hallucinating and use_multi_query:
         try:
+            print(f"\n[MULTI-QUERY] Starting variant retrieval...")
             t_variant = time.time()
             variants = generate_multi_query_variants(question, llm)
             variants_tried = variants
+            print(f"[MULTI-QUERY] Generated {len(variants)} variants")
 
-            # Try first variant
-            if variants:
-                variant_docs = retriever.invoke(variants[0])
+            # Re-retrieve with all variants
+            all_variant_docs = []
+            variant_results = {}
+
+            for i, variant in enumerate(variants):
+                variant_docs = retriever.invoke(variant)
                 variant_context = "\n\n".join([doc.page_content for doc in variant_docs])
+                all_variant_docs.extend(variant_docs)
+                variant_results[variant] = variant_docs
+                print(f"[MULTI-QUERY] Variant {i+1}: {len(variant_docs)} docs, {len(variant_context)} chars - {variant[:60]}...")
 
-                # Use variant if it gives more context
-                if len(variant_context) > len(context):
-                    docs = variant_docs
-                    context = variant_context
-                    query_used = variants[0]
-                    print(f"[TIMING] Retrieval (variant): {(time.time() - t_variant)*1000:.0f}ms, Using variant query")
-                    print(f"[QUERY] Variant: {variants[0][:80]}...")
+            # Rerank: combine original + variant results, score by relevance
+            combined_docs = docs + all_variant_docs
+
+            # Score docs by embedding similarity to original question
+            from langchain_community.embeddings import HuggingFaceEmbeddings
+            embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+            question_embedding = embeddings.embed_query(question)
+
+            # Simple reranking: score by average word overlap + position
+            def score_doc(doc, position):
+                q_words = set(question.lower().split())
+                doc_words = set(doc.page_content.lower().split())
+                overlap = len(q_words & doc_words) / (len(q_words) + 1)
+                position_score = 1 / (position + 1)
+                return overlap * 0.7 + position_score * 0.3
+
+            scored_docs = [(doc, score_doc(doc, i)) for i, doc in enumerate(combined_docs)]
+            scored_docs.sort(key=lambda x: x[1], reverse=True)
+
+            # Use top docs for regeneration
+            best_docs = [doc for doc, _ in scored_docs[:3]]
+            context = "\n\n".join([doc.page_content for doc in best_docs])
+            query_used = question
+
+            print(f"[MULTI-QUERY] Reranked {len(combined_docs)} docs, using top 3")
+            print(f"[TIMING] Retrieval (multi-query): {(time.time() - t_variant)*1000:.0f}ms")
+
+            # Regenerate answer with reranked context
+            print(f"[MULTI-QUERY] Regenerating answer with reranked context...")
+            initial_answer = chain.invoke({"context": context, "question": question})
         except Exception as e:
-            print(f"[WARNING] Multi-query failed: {e}, using original query")
-
-    # Generate with streaming
-    t3 = time.time()
-    chain = prompt | llm | StrOutputParser()
-    stream = chain.stream({"context": context, "question": question})
+            print(f"[WARNING] Multi-query failed: {e}, using original answer")
 
     def timed_stream():
         first_token = True
         total_time = 0
-        for chunk in stream:
+        for chunk in initial_answer:
             if first_token:
                 t4 = time.time()
                 ttft = (t4 - t3) * 1000
